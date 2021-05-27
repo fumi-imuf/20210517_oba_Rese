@@ -18,12 +18,12 @@ class ImagesTablesSeeder extends Seeder
             'shop_name' => '仙人',
             'image' => 'https://coachtech-matter.s3-ap-northeast-1.amazonaws.com/image/sushi.jpg'
         ];
-        DB::table('Images')->insert($param);
+        DB::table('images')->insert($param);
 
         $param = [
             'shop_name' => '牛助',
             'image' => 'https://coachtech-matter.s3-ap-northeast-1.amazonaws.com/image/yakiniku.jpg'
         ];
-        DB::table('Images')->insert($param);
+        DB::table('images')->insert($param);
     }
 }
