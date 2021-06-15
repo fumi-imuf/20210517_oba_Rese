@@ -29,16 +29,16 @@ Route::get('/user', [UsersController::class, 'get']);
 Route::get('/reservation', [ReservationsController::class, 'index']);
 Route::post('/reservation', [ReservationsController::class, 'post']);
 Route::delete('/reservation', [ReservationsController::class, 'delete']);
-Route::get('/shop/{shop_id}', [ShopsController::class], 'index');
-Route::get('/area', [AreasController::class], 'index');
-Route::get('/genre', [GenresController::class], 'index');
-Route::get('/shop_name',[ShopsController::class], 'index');
-Route::get('/shop', [ImagesController::class], 'index');
-Route::post('/register', [RegisterController::class], 'post');
-Route::post('/login', [LoginController::class], 'post');
-Route::post('/logout', [LogoutController::class], 'post');
-Route::post('/like', [LikesController::class], 'post');
-Route::delete('/like', [LikesController::class], 'delete');
+Route::get('/shop/{shop_id}', [ShopsController::class, 'index']);
+Route::get('/area', [AreasController::class, 'index']);
+Route::get('/genre', [GenresController::class, 'index']);
+Route::get('/shop_name',[ShopsController::class, 'index']);
+Route::get('/shop', [ImagesController::class, 'index']);
+Route::post('/register', [RegisterController::class, 'post']);
+Route::post('/login', [LoginController::class, 'post']);
+Route::post('/logout', [LogoutController::class, 'post']);
+Route::post('/like', [LikesController::class, 'post']);
+Route::delete('/like', [LikesController::class, 'delete']);
 
 
 
