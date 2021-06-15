@@ -26,5 +26,5 @@ class RegisterController extends Controller
             'message' => 'User created successfully',
             'data' => $param
         ], 200);
-    } 
+    }
 }

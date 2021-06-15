@@ -38,7 +38,7 @@ class ReservationsController extends Controller
         ->where('shop_id', $request->shop_id)
         ->where('reservation_date', $request->reservation_date)
         ->where('reservation_time', $request->reservation_time)
-        ->where('reservation_number', $request->reservation_number)->delite();
+        ->where('reservation_number', $request->reservation_number)->delete();
         return response()->json(['message' => 'Reservation deleted successfully'], 200);
     }
 }
